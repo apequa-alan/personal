@@ -1,0 +1,29 @@
+{
+  "name": "my-project-1",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve --port=8010 --open",
+    "build": "vue-cli-service build",
+    "lint": "eslint --ext .js,.vue --ignore-path .gitignore --fix src",
+    "format": "prettier .  --write"
+  },
+  "dependencies": {
+    "bootstrap": "5.2.3",
+    "core-js": "3.27.2",
+    "firebase": "9.17.1",
+    "uuid": "9.0.0",
+    "vue": "3.2.47",
+    "vue-router": "4.1.6"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "~4.5.12",
+    "@vue/cli-service": "~4.5.12",
+    "@vue/compiler-sfc": "^3.0.0"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ]
+}
