@@ -12,7 +12,7 @@
           <li class="nav-item active">
             <router-link class="nav-link" to="/news">Новости</router-link>
           </li>
-          <ListDropdown title="Портфолио" :items="firstLinks" />
+          <ListDropdown title="Портфолио" :items="portfolioLinks" />
           <li class="nav-item active">
             <router-link class="nav-link" to="/project-deals"
               >Проектная деятельность</router-link
@@ -23,12 +23,8 @@
               >Куржковая работа</router-link
             >
           </li>
-          <ListDropdown title="Методическая копилка" :items="secondLinks" />
-          <li class="nav-item active">
-            <router-link class="nav-link" to="/my-group"
-              >Моя группа</router-link
-            >
-          </li>
+          <ListDropdown title="Методическая копилка" :items="methodLinks" />
+          <ListDropdown title="Моя группа" :items="myGroupLinks" />
           <li class="nav-item active">
             <router-link class="nav-link" to="/for-parents"
               >Для вас родители</router-link
@@ -53,12 +49,12 @@ import ListDropdown from "./components/ListDropdown.vue";
 import "bootstrap/dist/css/bootstrap-grid.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 
-const firstLinks = [
+const portfolioLinks = [
   { title: "Портфолио документов", link: "/portfolio/documents" },
   { title: "Мои достижения", link: "/portfolio/advantages" },
   { title: "Достижения воспитанников", link: "/portfolio/children-advantages" },
 ];
-const secondLinks = [
+const methodLinks = [
   { title: "Программы", link: "/methods/programs" },
   { title: "Методические разработки", link: "/methods/inventions" },
   { title: "Конспекты НОД", link: "/methods/nod" },
@@ -72,6 +68,11 @@ const secondLinks = [
   },
 ];
 
+const myGroupLinks = [
+  { title: "Утренники", link: "/my-group/matinees" },
+  { title: "Воспитательная работа", link: "/my-group/work" },
+];
+
 export default {
   name: "App",
   components: {
@@ -83,8 +84,9 @@ export default {
 
     return {
       visitCount: Math.floor((now.getTime() - startDate.getTime()) / 1000000),
-      secondLinks,
-      firstLinks,
+      portfolioLinks,
+      methodLinks,
+      myGroupLinks
     };
   },
 };

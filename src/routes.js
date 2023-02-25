@@ -69,10 +69,16 @@ export default [
   },
 
   {
-    path: "/my-group",
-    name: "MyGroup",
-    component: () => import("./pages/MyGroup.vue"),
+    path: "/my-group/matinees",
+    name: "Matinees",
+    component: () => import("./pages/MyGroup/Matinees.vue"),
   },
+  {
+    path: "/my-group/work",
+    name: "Work",
+    component: () => import("./pages/MyGroup/Work.vue"),
+  },
+
   {
     path: "/for-parents",
     name: "ForParents",
