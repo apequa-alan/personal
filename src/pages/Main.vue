@@ -1,7 +1,8 @@
 <template>
   <div class="p-5 mb-4 bg-light rounded-3">
     <h1 class="mb-2"><span>Персональный сайт</span> Мидовой Анеты Лионовны</h1>
-    <img class="w-25" src="../assets/images/logo.jpg" alt="" />
+    <br>
+    <img class=" main-photo-width" src="../assets/images/logo.jpg" alt="" />
     <p>Воспитатель МКДОУ «Детский сад №3» с.п. Аргудан.</p>
     <p class="fw-bold">Уважаемые посетители!</p>
     <p>Рада приветствовать Вас на страницах моего сайта!</p>

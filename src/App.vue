@@ -1,6 +1,6 @@
 <template>
   <nav class="navbar navbar-expand-md navbar-dark bg-dark mb-4">
-    <div class="container">
+    <div class="container header-width">
       <div
         class="navbar-collapse offcanvas-collapse"
         id="navbarsExampleDefault"
@@ -71,6 +71,11 @@ const methodLinks = [
 const myGroupLinks = [
   { title: "Утренники", link: "/my-group/matinees" },
   { title: "Воспитательная работа", link: "/my-group/work" },
+  { title: "Осень", link: "/my-group/autumn"},
+  { title: "Эксперементирование", link: "/my-group/experimentation" },
+  { title: "Новый год", link: "/my-group/newYear" },
+  { title: "Предметно-пространственная среда", link: "/my-group/spatialEnvironment" },
+  { title: "Зима", link: "/my-group/Winter" },
 ];
 
 export default {
@@ -91,10 +96,10 @@ export default {
   },
 };
 </script>
-<style scoped>
+<style>
+@import "./main.css";
+
 .footer {
   width: 320px;
-  position: fixed;
-  bottom: 0;
 }
 </style>
