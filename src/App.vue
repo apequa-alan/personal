@@ -34,11 +34,19 @@
       </div>
     </div>
   </nav>
-  <div class="container">
-    <router-view />
-    <div class="footer">
-      <hr />
-      <p> Сайт посетило {{ visitCount }} гостей</p>
+  <div class="main">
+    <div class="container">
+      <router-view />
+    </div>
+  </div>
+  <div class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <hr />
+          <p> Сайт посетили {{ visitCount }} раз</p>
+        </div>
+      </div>
     </div>
   </div>
 </template>
@@ -99,7 +107,7 @@ export default {
 <style>
 @import "./main.css";
 
-.footer {
-  width: 320px;
+.main {
+  min-height: calc(100vh - 160px);
 }
 </style>

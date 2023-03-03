@@ -9,34 +9,35 @@ export default [
     name: "Home",
     component: () => import("./pages/Main.vue"),
   },
+
   {
     path: "/news",
     name: "News",
     component: () => import("./pages/News.vue"),
   },
   {
-    path: "/news/",
-    name: "News",
+    path: "/news/experimenting",
+    name: "NewsExperimenting",
     component: () => import("./pages/news/Experimenting.vue"),
   },
   {
-    path: "/news/",
-    name: "News",
+    path: "/news/fatherland-day",
+    name: "NewsFatherlandDay",
     component: () => import("./pages/news/FatherlandDay.vue"),
   },
   {
-    path: "/news/",
-    name: "News",
+    path: "/news/gift-dad",
+    name: "NewsGiftDad",
     component: () => import("./pages/news/GiftDad.vue"),
   },
   {
-    path: "/news/",
-    name: "News",
+    path: "/news/presentation",
+    name: "NewsPresentation",
     component: () => import("./pages/news/Presentation.vue"),
   },
   {
-    path: "/news/",
-    name: "News",
+    path: "/news/stock",
+    name: "NewsStock",
     component: () => import("./pages/news/Stock.vue"),
   },
  
