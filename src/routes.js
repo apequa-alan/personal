@@ -9,11 +9,38 @@ export default [
     name: "Home",
     component: () => import("./pages/Main.vue"),
   },
+
   {
     path: "/news",
     name: "News",
     component: () => import("./pages/News.vue"),
   },
+  {
+    path: "/news/experimenting",
+    name: "NewsExperimenting",
+    component: () => import("./pages/news/Experimenting.vue"),
+  },
+  {
+    path: "/news/fatherland-day",
+    name: "NewsFatherlandDay",
+    component: () => import("./pages/news/FatherlandDay.vue"),
+  },
+  {
+    path: "/news/gift-dad",
+    name: "NewsGiftDad",
+    component: () => import("./pages/news/GiftDad.vue"),
+  },
+  {
+    path: "/news/presentation",
+    name: "NewsPresentation",
+    component: () => import("./pages/news/Presentation.vue"),
+  },
+  {
+    path: "/news/stock",
+    name: "NewsStock",
+    component: () => import("./pages/news/Stock.vue"),
+  },
+ 
 
   {
     path: "/portfolio/documents",
@@ -83,5 +110,35 @@ export default [
     path: "/for-parents",
     name: "ForParents",
     component: () => import("./pages/ForParents.vue"),
+  },
+
+  {
+    path: "/my-group/winter",
+    name: "Winter",
+    component: () => import("./pages/MyGroup/Winter.vue"),
+  },
+
+  {
+    path: "/my-group/newYear",
+    name: "NewYear",
+    component: () => import("./pages/MyGroup/newYear.vue"),
+  },
+
+  {
+    path: "/my-group/autumn",
+    name: "Autumn",
+    component: () => import("./pages/MyGroup/autumn.vue"),
+  },
+
+  {
+    path: "/my-group/spatialEnvironment",
+    name: "SpatialEnvironment",
+    component: () => import("./pages/MyGroup/spatialEnvironment.vue"),
+  },
+
+  {
+    path: "/my-group/experimentation",
+    name: "Experimentation",
+    component: () => import("./pages/MyGroup/experimentation.vue"),
   },
 ];

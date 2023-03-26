@@ -1,6 +1,6 @@
 <template>
   <nav class="navbar navbar-expand-md navbar-dark bg-dark mb-4">
-    <div class="container">
+    <div class="container header-width">
       <div
         class="navbar-collapse offcanvas-collapse"
         id="navbarsExampleDefault"
@@ -34,11 +34,19 @@
       </div>
     </div>
   </nav>
-  <div class="container">
-    <router-view />
-    <div class="footer">
-      <hr />
-      <p> Сайт посетило {{ visitCount }} гостей</p>
+  <div class="main">
+    <div class="container">
+      <router-view />
+    </div>
+  </div>
+  <div class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <hr />
+          <p> Сайт посетили {{ visitCount }} раз</p>
+        </div>
+      </div>
     </div>
   </div>
 </template>
@@ -71,6 +79,11 @@ const methodLinks = [
 const myGroupLinks = [
   { title: "Утренники", link: "/my-group/matinees" },
   { title: "Воспитательная работа", link: "/my-group/work" },
+  { title: "Осень", link: "/my-group/autumn"},
+  { title: "Эксперементирование", link: "/my-group/experimentation" },
+  { title: "Новый год", link: "/my-group/newYear" },
+  { title: "Предметно-пространственная среда", link: "/my-group/spatialEnvironment" },
+  { title: "Зима", link: "/my-group/Winter" },
 ];
 
 export default {
@@ -91,10 +104,10 @@ export default {
   },
 };
 </script>
-<style scoped>
-.footer {
-  width: 320px;
-  position: fixed;
-  bottom: 0;
+<style>
+@import "./main.css";
+
+.main {
+  min-height: calc(100vh - 160px);
 }
 </style>
