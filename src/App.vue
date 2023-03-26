@@ -20,7 +20,7 @@
           </li>
           <li class="nav-item active">
             <router-link class="nav-link" to="/section-deals"
-              >Куржковая работа</router-link
+              >Кружковая работа</router-link
             >
           </li>
           <ListDropdown title="Методическая копилка" :items="methodLinks" />

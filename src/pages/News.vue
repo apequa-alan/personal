@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h3>Новости</h3>
+    <h3 class="main-title">Новости</h3>
     <p>
       <router-link to="/news/experimenting">«Экспериментирование со снегом»</router-link>
     </p>
